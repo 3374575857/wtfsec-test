@@ -1,0 +1,75 @@
+#網站網址
+baseURL = "http://example.org/"
+#網站名稱
+title = "My New Hugo Site"
+#主題
+theme = "hugo-notepadium"
+#網站底部版權
+copyright = "©2020 My New Hugo Site."
+
+hasCJKLanguage = true
+
+enableRobotsTXT = true
+paginate = 5
+
+defaultContentLanguage = "zh-tw"
+
+	
+# Enable Disqus
+#disqusShortname = "XXX"
+
+# Google Analytics
+#googleAnalytics = ""
+
+[markup.highlight]
+codeFences = true
+noClasses = false
+
+[markup.goldmark.renderer]
+unsafe = true  # enable raw HTML in Markdown
+
+[params]
+style = "light"  # default: auto. light: light theme, dark: dark theme, auto: based on system.
+dateFormat = "Monday, January 2, 2006"  # if unset, default is "2006-01-02"
+logo = ""  # if you have a logo png
+#slogan = ""
+license = "show License"  # CC License
+
+[params.comments]
+enable = false  # En/Disable comments globally, default: false. You can always enable comments on per page.
+
+[params.math]
+enable = false  # optional: true, false. Enable globally, default: false. You can always enable math on per page.
+use = "katex"  # option: "katex", "mathjax". default: "katex"
+
+[params.syntax]
+use = "none"  # builtin: "prismjs", "hljs". "none" means Chroma
+theme = "xcode"
+darkTheme = "xcode-dark"  # apply this theme in dark mode
+
+[params.nav]
+showCategories = true       # /categories/
+showTags = true             # /tags/
+
+# custom navigation items
+
+#[[params.nav.custom]]
+#title = "About"
+#url = "/about"
+
+[[params.nav.custom]]
+    title = "友链"
+    url = "/link/"
+
+[[params.link]]
+    title = "WTFSec"
+    url = "https://wtfsec.org/"
+
+	
+#Google 相關
+[params.google]
+	#Google 自訂搜尋
+	#搜尋引擎 ID
+	#cx = ""
+	#Google 自動化廣告 
+	#adsense = ""
